@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tmiconcie" >28dp</dimen>
+    <dimen name="sizecodigo" >20dp</dimen>
+    <dimen name="stxttipo" >18dp</dimen>
+    <dimen name="sizedescripcioncod" >17dp</dimen>
+
+</resources>

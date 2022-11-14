@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CIE10PROCE</string>
+    <string name="tm_img">5dp</string>
+
+
+    <string-array name="asd">
+        <item > "abs"</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:scrollbars="vertical"
+    tools:context=".LISTCIE"
+
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cabcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TXTITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIE 10"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtDESCR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clasificación Internacional de Enfermedades"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="crear bd"
+            android:visibility="gone"
+
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
+
+        </ListView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/txtabuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btn2"
+            android:ems="10"
+            android:hint="Esciba algo para realizar la busqueda"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="buscar"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lblNresul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myrecicl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

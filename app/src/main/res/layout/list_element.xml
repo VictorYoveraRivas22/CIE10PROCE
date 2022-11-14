@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+
+    >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+
+            >
+            <TextView
+                android:id="@+id/txtcodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J039"
+                android:textSize="@dimen/sizecodigo"
+                android:textStyle="bold"
+                android:textColor="@color/cabcolor"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/imgopciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txttip"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/tmiconcie"
+                    android:text="CIEX"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/stxttipo"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    >
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/iconfavorite"
+                    android:layout_width="@dimen/tmiconcie"
+                    android:layout_height="@dimen/tmiconcie"
+                    android:src="@drawable/ic_baseline_star_border_24"
+                   >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/iconview3"
+                    android:layout_width="@dimen/tmiconcie"
+                    android:layout_height="@dimen/tmiconcie"
+                    android:src="@drawable/ic_baseline_find_in_page_24"
+                    >
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtciedescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rinofaringitis (aguda) (subaguda) Rinofaringitis (aguda) (subaguda)"
+                android:textSize="@dimen/sizedescripcioncod"
+
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
